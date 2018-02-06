@@ -1,0 +1,45 @@
+ body { 
+      background-image: url(../assets/images/soumaya.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      font-family: sans-serif; 
+    }
+
+.blueish{
+  color: #1e88e5;
+}
+  
+  
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  color: #F38035;
+  font-weight: bolder;
+  font-style: bold;
+  font-size: 20pts;
+}
+
+h5 {
+  font-weight: bolder;
+  font-style: bold;
+  font-size: 20pts;
+  color: #F38035;
+}
+
+a {
+   color: #1e88e5;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.btn-large {
+  background-color: #F38035;
+  font-weight: bolder;
+  font-style: bold;
+  font-size: 20pts;
+}

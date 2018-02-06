@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<!-- Navbar -->
+
+    <header>
+        <nav class="nav-extended #1e88e5 blue darken-1">
+           <div class="nav-wrapper">
+               <a href="#" class="brand-logo center"><img src="../assets/images/go.png" alt="" ></a>
+               <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+               <a href="#" data-activates="mobile-demo" class="button-collapse right">        
+                 <ul>
+                   <li><input id="last_name" type="text" class="validate"placeholder="search"></li>  
+                   <li><i class="small material-icons">search</i></li>
+                  </ul>
+                </a>
+                
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   <li><input id="last_name" type="text" class="validate"placeholder="search"></li>  
+                   <li><i class="small material-icons">search</i></li>
+                   <li><a href="home.html">Home</a></li>
+                   <li><a href="friends.html">Amigos</a></li>
+                   <li><a class="modal-trigger" href="#modal2">Planea tu viaje</a></li>
+                   <li><a class="modal-trigger" href="#modal1" ><img src="../assets/images/userman.png" width="50px" alt=""></a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+
+    <div class="container">
+    
+
+        <!-- Plan Now -->
+
+        <div class="row">
+            <div class="offset-s3 col s6 div-planear">
+              <ul>
+                <li><a href="#modal2" class="modal-trigger waves-effect #ff9800 orange btn planear">Planea tu viaje ahora!</a></li>
+                <br>
+                <li><a href="#" class="modal-trigger waves-effect  green accent-3 btn planear">¡RECOMPENSAS!</a></li>  
+            </ul>
+            </div>
+        </div>
+
+        <!-- Add comment -->
+
+    <div class="container ">
+        <div class="row addComment">
+            <div class="blue lighten-5 col s12">
+                <p>¡Comparte tus viajes y gana recompensas!</p>
+                <div class="row">
+                    <div class="col s3">
+                        <a href="#"><i class="small material-icons">add_a_photo</i> photo</a>
+                    </div>
+                    <div class="col s3">
+                        <a href="#"><i class="small material-icons">video_call</i>video</a>
+                    </div>
+                    <div class="col s3">
+                        <a href="#"><i class="small material-icons">add</i>file</a>
+                    </div>
+                </div>
+            </div>
+            
+         <!-- Formulario de comentario -->
+
+            <form id="form" class="container">
+                <div class="row">
+                   <div class="col s12">
+                       <input type="text" id="comment-Input" autocomplete="off" class="validate" required>
+                   </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <button id="add-comment" type="submit" class="modal-action waves-effects #ff9800 orange btn right " disabled >Agregar</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+
+        <!-- commentary -->
+
+    <section class="container" id="publish-comments"></section>
+
+    <!-- commentary fiction-->
+
+    <div class="container commentBox">
+        <div class="row">
+            <br>
+                <div class="col s3 push-s1">
+                    <img class="circle" src="../assets/images/pinup.jpg" width="90px" alt="">
+                </div>
+                <div class="col s6 push-s2">
+                    <br>
+                    <li>Antonieta</li>
+                    <li>Nivel<i class="tiny material-icons"> stars stars stars stars stars</i></li>
+                </div>
+        </div>
+                <div class="row">
+                    <div id="comentario" class="col s10 push-s1">
+                        <p>From <b>CDMX</b> to <b>New York</b> </p>
+                        <p class=" light-green-text darken-3">$8,000</p>
+                        <p>The City of New York, often called New York City or simply New York, is the most populous city in the United States. With an estimated 2016 population of 8,537,673 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s5 push-s1">
+                        <img class="comm-img" src="../assets/images/newyork.jpg" alt="">
+                    </div>
+                    <div class="col s5 push-s1">
+                        <img class="comm-img" src="../assets/images/liberty-island.jpg" alt="">
+                        <p class="light-green-text accent-4"><a href="#">Ver viaje completo</a></p>
+                    </div>
+                </div>
+            <hr>
+            <div class="row">
+                <div class="col s2 push-s1">
+                    <a href=""><i class="small material-icons">star</i><h6>rate</h6></a>
+                </div>
+                <div class="col s2 push-s1">
+                    <a href=""><i class="small material-icons">share</i><h6>share</h6></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s9 push-1 center">
+                    <input type="text" placeholder="    comment...">       
+                </div>
+                <div class="col s2">
+                    <a href=""><i class="small material-icons">comment</i><h6>comment</h6></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+             
+   <!-- User Modal -->
+
+    <div id="modal1" class="modal">
+        <i class="tiny material-icons right">close</i>
+        <p><img src="../assets/images/userman.png" width="90px" alt=""></p>
+        <h2>Elena Troya</h2>
+        <p><span><i class="mdi-action-perm-identity cyan-text text-darken-2"></i>---Wanderlust---</span></p>
+        <p>Los viajes ilustran...</p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">favorite_border</i> Puntos :  8989</p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">email</i> elena@troya.com</p>
+        <p>Puntaje <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i></p>
+        <p><i class="tiny material-icons cyan-text text-darken-2">airplanemode_active</i>viajando ahora</p>
+        <a href="profile.html" class="modal-trigger waves-effect deep-purple lighten-3 btn planear">Ver perfil de viajes</a>
+    </div>
+
+    <!-- Plan Modal -->
+
+    <div id="modal2" class="modal">
+        <div class="row ">
+            <div class="col s9 left"> 
+                <h5>¡Crea el viaje perfecto!</h5>
+            </div>
+            <div class="col s3">
+                <img class="right" src="../assets/images/go.png" width="50px" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect orange darken-1" type="submit" name="action">Hotel
+                <i class="material-icons right">hotel</i>
+            </button>      
+            <button class="btn waves-effect orange darken-1" type="submit" name="action">Auto
+                <i class="material-icons right">directions_car</i>
+            </button>  
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Ida y vuelta</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Solo ida</label>
+                </p>
+            </div>
+            <div class="col s4">
+                <p>
+                    <input type="checkbox" id="test5" />
+                    <label for="test5">Multidestino</label>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6">
+                <p>Origen</p>
+                <input type="text" placeholder="CDMX">
+            </div>
+            <div class="col s6">
+                <p>Destino</p>
+                <input type="text" placeholder="¿A dónde quieres viajar?">
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <p>Fechas</p>
+                <input type="text" placeholder="Partida">                
+            </div>
+            <div class="col s4">
+                <p>-</p>
+                <input type="text" placeholder="Regreso">                
+            </div>
+            <div class="col s4">
+                <p>Pasajeros</p>
+                <input type="text" placeholder="¿Cuantas personas?">                
+            </div>
+            <a class="waves-effect orange darken-1 btn">¡Encuentra tu viaje!</a>
+        </div>
+          
+    </div>
+          
+   <!-- User SideNav -->
+
+   <ul id="slide-out" class="side-nav">
+        <li>
+           <div class="user-view">
+                <div class="background">
+                    <img src="../assets/images/gray_suitcase.jpg" class="center" width="160%">
+                </div>
+                <div class="row">
+                    <div class="col s4"></div>
+                    <div class="col s3 ">
+                       <img class="circle" src="../assets/images/userman.png" width="90px" alt="">
+                    </div>
+                    <div class="col s5"></div>
+                </div>
+                <h5 class="white-text">Elena Troya</h5>
+                <h5 class="white-text">elena@troya.com</h5>
+          </div>
+        </li>
+        <p>Puntaje <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i></p>
+        <li><div class="divider"></div></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="friends.html">Amigos</a></li>
+        <li><a class="modal-trigger" href="#modal2">Planea tu viaje</a></li>
+        <a href="profile.html" class="modal-trigger waves-effect deep-purple lighten-3 btn planear">Ver perfil de viajes</a>
+        <br>
+        <a href="#" class="modal-trigger waves-effect  green accent-3 btn planear">¡RECOMPENSAS!</a>
+    </ul>
+
+    <ul id="slide-out" class="side-nav fixed">
+            <li>
+               <div class="user-view">
+                    <div class="background">
+                        <img src="../assets/images/gray_suitcase.jpg" class="center" width="160%">
+                    </div>
+                    <div class="row">
+                        <div class="col s4"></div>
+                        <div class="col s3 ">
+                           <img class="circle" src="../assets/images/userman.png" width="90px" alt="">
+                        </div>
+                        <div class="col s5"></div>
+                    </div>
+                    <h5 class="white-text">Elena Troya</h5>
+                    <h5 class="white-text">elena@troya.com</h5>
+              </div>
+            </li>
+            <p>Puntaje <i class="tiny material-icons cyan-text text-darken-2">star star star star_half star_border</i></p>
+            <li><div class="divider"></div></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="friends.html">Amigos</a></li>
+            <li><a class="modal-trigger" href="#modal2">Planea tu viaje</a></li>
+            <a href="profile.html" class="modal-trigger waves-effect deep-purple lighten-3 btn planear">Ver perfil de viajes</a>
+            <br>
+            <a href="#" class="modal-trigger waves-effect  green accent-3 btn planear">¡RECOMPENSAS!</a>
+        </ul>
+              
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

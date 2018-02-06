@@ -1,0 +1,80 @@
+body{
+    font-size: 13pt;
+}
+
+#backy{
+    height: 300px;
+    width: 100%;
+}
+
+#modal1, #modal2{
+text-align: center;
+font-size: 15pts;
+}
+
+#add-comm{
+    background: url(../assets/images/userman.png) no-repeat scroll .1px .1px;
+    background-size: 40px;
+    padding-left:30px;
+    height: 60px;
+}
+
+#test1, #test2{
+   text-align: center;
+   background-image: url(../assets/images/gray_suitcase.jpg);
+}
+
+
+a.planear{
+    text-align: center;
+    width: 100%;
+  }
+
+.activator{
+width: 100px;
+  }
+
+.addComment{
+text-align: center;
+box-shadow:0 0 5px 5px #DDDDDD;
+  }
+
+
+.brand-logo > img{
+    width:60px;
+}
+
+.comment{
+    text-align: center;
+    box-shadow:0 0 5px 5px #DDDDDD;
+}
+
+.comment row, col{
+    margin: 0;
+    padding: 0;
+}
+
+.comm-img{
+    width: 90%;
+}
+
+.commentBox{
+    box-shadow:0 0 5px 5px #DDDDDD;
+}
+
+.friend{
+    margin: 3%;
+}
+
+.nav-extended {
+    margin-bottom: 0px;
+    padding: 30px 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+    height: 350px;
+    background-color: 
+  }
+
+.side-nav{
+    text-align: center;
+}
