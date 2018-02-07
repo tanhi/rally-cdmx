@@ -11,11 +11,11 @@ var ruta = [
    {
       "ponint": 2,
       "location": {
-         "lat": 19.346242,
-         "lng": -99.190581
+         "lat": 19.345427,
+         "lng": -99.190976
       },
-      "name": "Mercado del Carmen",
-      "vicinity": "Amargura 5, San Ángel, 01000 Ciudad de México, CDMX"
+      "name": "Biblioteca de las Revoluciones de México",
+      "vicinity": "Calle Plaza del Carmen 6, San Ángel TNT, San Ángel, 01000 Ciudad de México, CDMX"
       },
    {
       "ponint": 3,
