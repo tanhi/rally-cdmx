@@ -1,4 +1,4 @@
-alert("inicia");
+
   function initMap() {
     var directionsService = new google.maps.DirectionsService;
     var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -30,7 +30,7 @@ alert("inicia");
       destination: document.getElementById('end').value,
       waypoints: waypts,
       optimizeWaypoints: true,
-      travelMode: 'DRIVING'
+      travelMode: 'WALKING'
     }, function(response, status) {
       if (status === 'OK') {
         directionsDisplay.setDirections(response);
