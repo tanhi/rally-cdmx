@@ -92,15 +92,22 @@
         <div class="row">
             <div class="col s12 l4 push-l2">
                 <b>Waypoints:</b>
-                <select multiple id="waypoints">
-                    <option value="Mercado del Carmen, San Angel">Mercado del carmen</option>
-                    <option value="casa del Obispo, San Angel">Casa de Obispo</option>
-                    <option value="Parroquia de San Jacinto, San Angel">Parroquia de Sj</option>
-                    <option value="Plaza de los cielos, San Angel">Plaza de los cielos</option>
-                    <option value="Plaza de los Arcángeles, San Angel">Plaza de los Arcángeles</option>
-                    <option value="Jardin del arte, San Angel">jardin del arte</option>
-                    <option value="Plaza San Jacinto, San Angel">plaza san Jacinto</option>
-                </select>
+                <select  id="waypoints" onchange="filterElements(event)">
+                    <option data-index="0" value="Plaza del Carmen, San Angel">Plaza del Carmen</option>
+                    <option data-index="1" value="Biblioteca de las Revoluciones, San Angel">Biblioteca de las Revoluciones</option>
+                    <option data-index="2" value="Casa del Mayorazgo de Fagoaga, San Angel">Casa del Mayorazgo de Fagoaga</option>
+                    <option data-index="3" value="casa del Obispo, San Angel">Casa de Obispo</option>
+                    <option  data-index="4" value="Parroquia de San Jacinto, San Angel">Parroquia de San Jacinto</option>
+                    <option data-index="5" value="Plaza de los cielos, San Angel">Plaza de los Cielos</option>
+                    <option data-index="6" value="La Casa Blanca, San Angel">La Casa Blanca</option>
+                    <option data-index="7" value="Plaza de los Arcangeles, San Angel">Plaza de los Arcángeles</option>
+                    <option data-index="8" value="Jardin del arte, San Angel">Jardín del Arte</option>
+                    <option data-index="9" value="Plaza San Jacinto, San Angel">Plaza san Jacinto</option>
+                     <option data-index="10" value="Plaza Villa San Jacinto, San Angel">Plaza Villa San Jacinto</option>
+                    <option data-index="11" value="Museo Casa del Risco, San Angel">Casa del Risco</option>
+                    <option data-index="12" value="Centro Cultural San Angel, San Angel">Centro Cultural San Ángel</option>
+                    <option data-index="13" value="Templo del Carmen, San Angel">Templo del Carmen</option>
+                  </select>
             </div>
             <div class="col s12 l4 push-l2">
                 <input type="submit" id="submit">
@@ -315,9 +322,10 @@
     </script>
 
     <script src="../js/app-mapa.js"></script>
-    <script src="../js/login.js"></script>
-
+    <script src="../js/ruta.js"></script>
+    <script src="../js/app-options.js"></script>
     <script src="../js/app.js"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 
