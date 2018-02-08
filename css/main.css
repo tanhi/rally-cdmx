@@ -4,6 +4,9 @@ body{
     padding: 0;
 }
 
+.container{
+    margin-top:20%;
+}
 /* Color Palette
 
 indigo
@@ -61,7 +64,6 @@ font-size: 15pts;
 .space{
     height: 30px;
 }
-
 
 
 
