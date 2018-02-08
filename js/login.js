@@ -6,6 +6,7 @@ var config = {
     storageBucket: "rally-cdmx-a6f5e.appspot.com",
     messagingSenderId: "417009986717"
   };
+  
   firebase.initializeApp(config);
 
   $("#buttonGoogle").click(function(){

@@ -36,14 +36,11 @@
                 </a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <input id="last_name" type="text" class="validate" placeholder="search">
-                    </li>
-                    <li>
-                        <i class="small material-icons">search</i>
+                        <h6 id="name">nombre de usuario</h6>
                     </li>
                     <li>
                         <a class="modal-trigger" href="#modal1">
-                            <img src="../assets/images/user.png" width="50px" alt="">
+                            <img id="photo" src="../assets/images/user.png" width="50px" alt="">
                         </a>
                     </li>
                 </ul>
@@ -98,7 +95,7 @@
 
         <div class="row">
             <div class="col s10">
-                <button type='submit' name='btn_login' class='col s10 push-s2 btn orange accent-2'>
+                <button onclick="window.location.href='start.html'" type='submit' name='btn_login' class='col s10 push-s2 btn orange accent-2'>
                     Iniciar recorrido
                 </button>
             </div>
@@ -348,9 +345,12 @@
         <a href="#" class="modal-trigger waves-effect  green accent-3 btn planear">¡RECOMPENSAS!</a>
     </ul>
 
-
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <script src="../js/login.js"></script>
     <script src="../js/app.js"></script>
 </body>
 
