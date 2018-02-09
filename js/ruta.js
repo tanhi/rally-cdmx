@@ -11,8 +11,9 @@ var ruta = [
       { 
       "name": "Biblioteca de las Revoluciones de México",
       "info":"Hoy día, el área principal de la Casa de los Dos Patios es ocupada por la Biblioteca de las Revoluciones de México.En el sótano existe un túnel, hoy clausurado. Se cuenta que allí tuvo su guarida el bandido Jesús Arriaga, mejor conocido como Chucho el Roto.",
-      "vicinity": "Calle Plaza del Carmen 6, San Ángel TNT, San Ángel, 01000 Ciudad de México, CDMX"
-      },
+      "vicinity": "Calle Plaza del Carmen 6, San Ángel TNT, San Ángel, 01000 Ciudad de México, CDMX",
+     "image": 'http://2.bp.blogspot.com/-U0tEUQJDH2U/VdYB0FJLk1I/AAAAAAAApHM/bMFxZiD3dDo/s1600/Library%2Bmurals%252C%2BVlady%2BRussakov.jpg',
+},
 
      
     {
