@@ -1,7 +1,10 @@
 var comments = [];
 var $commentInput = $("#comment-Input");
+//PONE EL CONTADOR A 0
+var contador= 0;
 
 function loadPage() {
+
   $('.modal').modal();
   $(".button-collapse").sideNav();
   $('.tap-target').tapTarget('open');
@@ -9,8 +12,19 @@ function loadPage() {
   $('.parallax').parallax();
   $("#form").submit(addComment);
   $commentInput.keyup(validateComment);
- 
+  $(".contador").text("Puntos: " + contador);
+  $("#count_click").click(count_click_add);
 }
+
+//AÑADE UN CLICK AL EJECUTAR LA FUNCIÓN
+function count_click_add() {
+  contador += 50;
+  $(".contador").text("Puntos: " + contador);
+}
+
+//MUESTRA CUANTOS CLICK LLEVAMOS
+
+
 
 function validateComment () {
   var $containerAddComment = $("#add-comment");
@@ -18,7 +32,7 @@ function validateComment () {
   if($($commentInput).val().trim().length > 0) {
     $containerAddComment.removeAttr("disabled");
   } else {
-    $containerAddComment.attr("disabled", true); 
+    $containerAddComment.attr("disabled", true);
   }
 }
 
@@ -36,7 +50,7 @@ function addComment(e) {
   //console.log(comments);
   // Esta funcion pinta en el html
   paintCommentsInHtml(comment);
-  
+
   // limpiando valores del form
   $commentInput.val(" ");
 }
@@ -57,18 +71,15 @@ function paintCommentsInHtml (comment) {
 
 
   $("#publish-comments").prepend($newComment);
-  
+
 }
 
-
-
-
-  
-
-
-
-  
-
+//AÑADE A TODOS LOS BOTONES CON EL NAME count_click QUE AL SER PULSADOS EJECUTEN EL CONTADOR
+$( document ).ready(function(){
+  $("#count_click").click(function(){
+     count_click_add();
+  });
+});
 
 
 
