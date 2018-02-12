@@ -28,11 +28,11 @@
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li>
-                        <h6 id="name">nombre de usuario</h6>
+                        <h4 class="name">nombre de usuario</h4>
                     </li>
                     <li>
                         <a class="modal-trigger" href="#modal1">
-                            <img id="photo" src="../assets/images/user.png" width="50px" alt="">
+                            <img id="photo" class="circle" src="../assets/images/user.png" width="60px" alt="">
                         </a>
                     </li>
                 </ul>
@@ -117,7 +117,7 @@
             <p>
                 <img src="../assets/images/user.png" width="90px" alt="">
             </p>
-            <h3>Nombre de Usuario</h3>
+            <h3 class="name">Nombre de Usuario</h3>
             <h4>
                 <i class="small material-icons cyan-text text-darken-2">favorite_border</i>
                 <div class="contador"></div>
@@ -183,11 +183,11 @@
                     <div class="row">
                         <div class="col s4"></div>
                         <div class="col s3 ">
-                            <img class="circle" src="../assets/images/user.png" width="90px" alt="">
+                            <img class="circle photo" src="../assets/images/user.png" width="90px" alt="">
                         </div>
                         <div class="col s5"></div>
                     </div>
-                    <h4 class="white-text">Nombre de usuario</h4>
+                    <h2 class="white-text name">Nombre de usuario</h2>
                 </div>
             </li>
             <h5>
@@ -205,6 +205,10 @@
             </button>
         </ul>
 
+
+        <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7d6ykQP7zGfpXa4azMcDJnA9Ei2lD6Pk&callback=initMap">
