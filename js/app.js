@@ -12,7 +12,7 @@ function loadPage() {
   $('.parallax').parallax();
   $("#form").submit(addComment);
   $commentInput.keyup(validateComment);
-  $(".contador").text("Puntos: " + contador);
+  $(".contador").text("Puntos: " + points);
   $("#count_click").click(count_click_add);
 }
 
@@ -20,9 +20,11 @@ function loadPage() {
 function count_click_add() {
   contador += 50;
   $(".contador").text("Puntos: " + contador);
+  localStorage.setItem("puntos", contador);
 }
 
-//MUESTRA CUANTOS CLICK LLEVAMOS
+  var points = localStorage.getItem("puntos");
+
 
 
 
