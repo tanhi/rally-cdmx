@@ -242,17 +242,19 @@
 
         <!-- User Modal -->
 
-        <div id="modal1" class="modal ">
-            <i class="tiny material-icons right">close</i>
-            <p>
-                <img src="../assets/images/user.png" width="90px" alt="">
-            </p>
-            <h3>Nombre de Usuario</h3>
-            <h4>
-                <i class="small material-icons cyan-text text-darken-2">favorite_border</i>
-                <div class="contador"></div>
-            </h4>
-        </div>
+
+    <div id="modal1" class="modal ">
+        <i class="tiny material-icons right">close</i>
+        <p>
+            <img class="photo"src="../assets/images/user.png" width="90px" alt="">
+        </p>
+        <h3 class="name">Nombre de Usuario</h3>
+        <h4>
+            <i class="small material-icons cyan-text text-darken-2">favorite_border</i>
+            <div class="contador"></div>
+        </h4>
+    </div>
+
 
         <!-- Comienza una ruta MODAL -->
 
@@ -304,47 +306,55 @@
 
         <!-- User SideNav -->
 
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="../assets/images/soumaya.jpg" class="center" width="160%">
-                    </div>
-                    <div class="row">
-                        <div class="col s4"></div>
-                        <div class="col s3 ">
-                            <img class="circle" src="../assets/images/user.png" width="90px" alt="">
-                        </div>
-                        <div class="col s5"></div>
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../assets/images/soumaya.jpg" class="center" width="160%">
+                </div>
+                <div class="row">
+                    <div class="col s4"></div>
+                    <div class="col s3 ">
+                        <img class="circle photo" src="../assets/images/user.png" width="90px" alt="">
+
                     </div>
                     <h4 class="white-text">Nombre de usuario</h4>
                 </div>
-            </li>
-            <h5>
-                <i class="tiny material-icons cyan-text text-darken-2">favorite_border</i>
-                <div class="contador"></div>
-            </h5>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <button type='submit' name='btn_login' class='col s12 btn orange accent-2'>
-                <a class="modal-trigger" href="#modal2"> Nuevo recorrido</a>
-            </button>
-        </ul>
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7d6ykQP7zGfpXa4azMcDJnA9Ei2lD6Pk&callback=initMap">
-        </script>
+                <h1 class="white-text name">Nombre de usuario</h1>
+            </div>
+        </li>
+        <h5>
+            <i class="tiny material-icons cyan-text text-darken-2">favorite_border</i>
+            <div class="contador"></div>
+        </h5>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a href="home.html">Home</a>
+        </li>
+        <button type='submit' name='btn_login' class='col s12 btn orange accent-2'>
+            <a class="modal-trigger" href="#modal2"> Nuevo recorrido</a>
+        </button>
+    </ul>
 
-        <script src="../js/app-mapa.js"></script>
-        <script src="../js/ruta.js"></script>
-        <script src="../js/app-options.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/login.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7d6ykQP7zGfpXa4azMcDJnA9Ei2lD6Pk&callback=initMap">
+    </script>
+
+    <script src="../js/app-mapa.js"></script>
+    <script src="../js/ruta.js"></script>
+    <script src="../js/app-options.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/login.js"></script>
+
 
 </body>
 

@@ -66,15 +66,16 @@
   */
 
   var config = {
-    apiKey: "AIzaSyA5iohhz8K9FTZ1pnkPgmnWIobVtuvPxkw",
-    authDomain: "myrally-c1482.firebaseapp.com",
-    databaseURL: "https://myrally-c1482.firebaseio.com",
-    projectId: "myrally-c1482",
-    storageBucket: "myrally-c1482.appspot.com",
-    messagingSenderId: "279728329137"
+    apiKey: "AIzaSyCQ01KU0LYHahKkk_rBlTmdjryZP8yDMPQ",
+    authDomain: "rally-cdmx-1518060815650.firebaseapp.com",
+    databaseURL: "https://rally-cdmx-1518060815650.firebaseio.com",
+    projectId: "rally-cdmx-1518060815650",
+    storageBucket: "rally-cdmx-1518060815650.appspot.com",
+    messagingSenderId: "249282693693"
   };
-  firebase.initializeApp(config);
-  $("#buttonGoogle").click(function(){
+  firebase.initializeApp(config); 
+  $("#buttonGoogle").click(function(e){
+    e.preventDefault();
     authGoogle();
   })
   
@@ -89,9 +90,8 @@
       var token = result.credential.accessToken;
       // The signed-in user info.
       var user = result.user;
-      window.location.href = '../views/home.html';
+      window.location.href='../views/home.html'
       console.log(result);
-      // ...
     }).catch(function(error) {
       
       var errorCode = error.code;
@@ -112,7 +112,8 @@
       var $photoProfile = $('#photo');
       var $nameUsers = $('#name');
       var $usersComment = $('.name-comment');
-      
+      var $photoProfile1 = $('.photo');
+      var $nameUsers1 = $('.name');
         if (user) {
             var displayName = user.displayName;
             var photoURL = user.photoURL;
@@ -120,6 +121,8 @@
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             
+            $photoProfile1.attr('src', photoURL);
+             $nameUsers1.text(displayName);
             $photoProfile.attr('src', photoURL);
             $nameUsers.text(displayName);
             $usersComment.text(displayName);
