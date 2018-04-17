@@ -78,6 +78,7 @@ Nombre: Rally CDMEX aún por confirmar
 Isotipo: en contrucción
 Paleta de colores: en construcción
 Arquitectura de información (sketching)
-![login](assets/images/sketch1.jpg)
-![perfil](assets/images/sketch2.jpg)
-![inicio](assets/images/sketch3.jpg)
+![captura de pantalla 18](https://user-images.githubusercontent.com/32872583/38882247-43616d42-422f-11e8-9c43-b59196d0d06e.png)
+![captura de pantalla 19](https://user-images.githubusercontent.com/32872583/38882208-31175bc4-422f-11e8-9421-30f44d647039.png)
+![captura de pantalla 20](https://user-images.githubusercontent.com/32872583/38882223-3891540e-422f-11e8-950a-07bbef3ef27b.png)
+![captura de pantalla 21](https://user-images.githubusercontent.com/32872583/38882235-3c44506a-422f-11e8-9327-5403c7ec48cb.png)
